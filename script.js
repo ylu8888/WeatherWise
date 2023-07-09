@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 image.src = 'images/cloud.png';
             } 
 
-            else if (weather === 'Haze') {
+            else if (weather === 'Mist') {
                 image.src = 'images/mist.png';
             } 
 
