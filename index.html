@@ -3,11 +3,53 @@
     <head>
         <title>WeatherWise</title>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-        WeatherWise
+        <div class="container">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <form class="searchform">
+                    <input type="text" placeholder="Enter Any Location">
+                    <button class="fa-solid fa-magnifying-glass" id="search-button" type="submit"></button>
+                </form>
+                
+                
+            </div>
+
+            <div class="not-found">
+                <img src="images/404.png" alt="error404">
+                <p>Error: Invalid Location</p>
+            </div>
+
+            <div class="weather-box">
+                <img src="">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+
+        <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
 
