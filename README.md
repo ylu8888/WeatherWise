@@ -5,6 +5,6 @@ Purpose:
 
 -to practice fetching data from APIs
 
--simple app to get the weather from different locations
+-also just personally wanted a convenient app to easily get the weather from anywhere
 
 ![image](https://github.com/ylu8888/WeatherWise/assets/123523291/68d548cd-17d5-4d64-a671-243aec686b73)
