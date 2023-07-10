@@ -16,11 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        //fetch the api data with the respective location from input
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${APIKey}`)
-        .then(response => response.json())
-        .then(data => {
+        .then(response => response.json()) //convert to json format
+        .then(data => { //data is just a variable name for the json
 
-            //if Error 404, display the error img
+            //if location is invalid, display the error img
             if(data.cod === '404'){
                 container.style.height = '400px';
                 weatherBox.style.display ='none';
