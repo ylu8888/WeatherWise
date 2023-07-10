@@ -3,4 +3,5 @@ A web app tells you the weather: temperature, humidity, and wind speeds of any l
 
 Purpose: mainly to practice fetching data from APIs
 
-![image](https://github.com/ylu8888/WeatherWise/assets/123523291/68d548cd-17d5-4d64-a671-243aec686b73)
+![image](https://github.com/ylu8888/WeatherWise/assets/123523291/5885347d-a3d6-44b8-b1d0-14e8a8e0ee34)
+
