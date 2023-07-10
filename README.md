@@ -1,4 +1,4 @@
-# WeatherWise https://weatherwiser.netlify.app/
+# WeatherWiz https://weatherwizz.netlify.app/
 A web app tells you the weather: temperature, humidity, and wind speeds of any location
 
 Purpose: mainly to practice fetching data from APIs and practice vanilla Javascript as a beginner
