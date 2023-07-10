@@ -3,7 +3,7 @@ A web app tells you the weather: temperature, humidity, and wind speeds of any l
 
 Purpose: 
 
--to practice fetching data from APIs
+-mainly to practice fetching data from APIs
 
 -also just personally wanted a convenient app to easily get the weather from anywhere
 
