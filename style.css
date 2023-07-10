@@ -11,14 +11,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-color: rgb(26, 27, 29);
+    
 }
 
 .container{
     position: relative;
     width: 400px;
     height: 105px;
-    background: white;
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
@@ -42,6 +43,7 @@ body{
     font-weight: 500;
     text-transform: capitalize;
     padding-left: 32px;
+    border-radius: 18px;
    
 }
 
@@ -88,7 +90,7 @@ body{
 
 .weather-box .temperature{
     position: relative;
-    color: #06283D;
+    color: white;
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
@@ -104,7 +106,7 @@ body{
 }
 
 .weather-box .description{
-    color: #06283D;
+    color: white;
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -136,7 +138,7 @@ body{
 }
 
 .weather-details i{
-    color: #06283D;
+    color: white;
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
@@ -144,13 +146,13 @@ body{
 }
 
 .weather-details span{
-    color: #06283D;
+    color: white;
     font-size: 22px; 
     font-weight: 500;
 }
 
 .weather-details p{
-    color: #06283D;
+    color: white;
     font-size: 14px;
     font-weight: 500;
 }
