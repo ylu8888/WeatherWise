@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const details = document.querySelector('.weather-details');
     const error = document.querySelector('.not-found');
 
-    //when button is clicked or user presses enter
+    //when button is clicked or the user presses enter
     document.querySelector('.searchform').onsubmit = (event) => {
         event.preventDefault(); //prevent page refresh on form submission
         const input = document.querySelector('.search-box input').value; //get user search input
 
-        if(input === ''){
+        if(input === ''){ //if nothing is in search bar just return
             return;
         }
 
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details .wind span');
 
-            const weather = data.weather[0].main;
-
+            //gets the weather and changes icon accordingly
+            const weather = data.weather[0].main; 
             if (weather === 'Clear') {
                 image.src = 'images/clear.png';
             } 
@@ -67,14 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //convert C to F 
             const fahren = parseInt(data.main.temp) * 9/5 + 32; 
+            //change the html to data from API
             temp.innerHTML = `${Math.ceil(fahren.toFixed(0))}<span>°F</span>`; //round up and no decimals
             descript.innerHTML = `${data.weather[0].description}`;
             humidity.innerHTML = `${data.main.humidity}%`
             wind.innerHTML = `${parseInt(data.wind.speed)} km/h`;
-
-            weatherBox.style.display = '';
+            
+            weatherBox.style.display = '';  //the '' just resets the css to default 
             details.style.display = '';
-            weatherBox.classList.add('fadeIn');
+            weatherBox.classList.add('fadeIn');   //fade and display the new weather data
             details.classList.add('fadeIn');
             container.style.height = '590px';
             
